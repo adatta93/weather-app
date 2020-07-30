@@ -1,0 +1,86 @@
+.today-highlight {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 40px;
+}
+
+.wind,
+.humidity,
+.visibility,
+.air-pressure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-basis: 280px;
+  background-color: var(--card-bg);
+  color: var(--textTitle);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.hightlight-value {
+  font-size: 3.5rem;
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+.highlight-unit {
+  font-size: 1.5rem;
+}
+
+.compass {
+  display: flex;
+  align-items: center;
+}
+
+.compass .material-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--location-btn-bg);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-right: 18px;
+}
+
+.progress-bar-scale {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3px;
+}
+
+.progress-bar-track {
+  width: 80%;
+  background: #e7e7eb;
+  border-radius: 10px;
+}
+
+.progress-bar-fill {
+  color: #000;
+  background-color: #c88c32;
+  height: 8px;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .today-highlight {
+    grid-template-columns: auto;
+  }
+
+  .hightlight-value {
+    font-size: 2.5rem;
+  }
+
+  .compass {
+    font-size: 0.9rem;
+  }
+
+  .compass .material-icons {
+    font-size: 14px;
+    height: 24px;
+    width: 24px;
+  }
+}

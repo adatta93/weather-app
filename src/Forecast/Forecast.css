@@ -1,0 +1,25 @@
+.forecast-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: var(--card-bg);
+  color: var(--textTitle);
+  padding: 15px 20px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.forecast-date {
+  padding-bottom: 16px;
+}
+
+.forecast-temp {
+  display: flex;
+  align-items: center;
+  padding-top: 16px;
+}
+
+.forecast-temp div {
+  padding: 0 10px;
+}

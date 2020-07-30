@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin-bottom: 30px;
+}
+
+.dark-mode {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background: var(--card-bg);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.change-temp-format {
+  display: flex;
+  align-items: center;
+}
+
+.temp-format {
+  font-size: 16px;
+  font-weight: 600;
+  background: #585676;
+  color: var(--textTitle);
+  padding: 7px 9px;
+  margin-left: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.temp-format.selected {
+  background: var(--textTitle);
+  color: var(--card-bg);
+}
