@@ -1,6 +1,6 @@
 {
-  "homepage": "https://adatta93.github.io/country-app",
-  "name": "country-app",
+  "homepage": "https://adatta93.github.io/weather-app",
+  "name": "weather-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -180,6 +180,8 @@ export default function HomePage({ isDark, toggleDark }) {
   // }, []);
 
   const baseUrl = "https://www.metaweather.com/static/img/weather";
+  //const serviceUrl = "https://www.metaweather.com";
+  const serviceUrl = "https://cors-anywhere.herokuapp.com/https://www.metaweather.com";
 
   const [showSearch, setShowSearch] = useState(false);
   const onSearchPlaces = () => {
@@ -193,8 +195,7 @@ export default function HomePage({ isDark, toggleDark }) {
     setWeatherLoading(true);
     axios
       .get(
-        "https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/" +
-          woeid
+        `${serviceUrl}/api/location/${woeid}`
       )
       .then(
         (res) => {
@@ -216,7 +217,7 @@ export default function HomePage({ isDark, toggleDark }) {
         (pos) => {
           axios
             .get(
-              `https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/search/?lattlong=${pos.coords.latitude},${pos.coords.longitude}`
+              `${serviceUrl}/api/location/search/?lattlong=${pos.coords.latitude},${pos.coords.longitude}`
             )
             .then(
               (res) => {
@@ -246,8 +247,7 @@ export default function HomePage({ isDark, toggleDark }) {
     setLoading(true);
     axios
       .get(
-        "https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/search/?query=" +
-          query
+        `${serviceUrl}/api/location/search/?query=${query}`
       )
       .then(
         (res) => {

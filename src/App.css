@@ -63,7 +63,7 @@ body.dark {
   height: 100%;
   z-index: 0;
   opacity: 0.05;
-  background: #1e213a url(/cloud-background.png) no-repeat 50% 15%;
+  background: #1e213a url(./images/cloud-background.png) no-repeat 50% 15%;
 }
 
 .right-panel {
@@ -157,6 +157,8 @@ body.dark {
   .right-panel {
     margin-left: 0;
     padding: 20px;
+	overflow: hidden;
+	height: auto;
   }
 
   .forcase-list {
