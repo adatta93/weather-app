@@ -181,7 +181,8 @@ export default function HomePage({ isDark, toggleDark }) {
 
   const baseUrl = "https://www.metaweather.com/static/img/weather";
   //const serviceUrl = "https://www.metaweather.com";
-  const serviceUrl = "https://cors-anywhere.herokuapp.com/https://www.metaweather.com";
+  //const serviceUrl = "https://cors-anywhere.herokuapp.com/https://www.metaweather.com";
+  const serviceUrl = "https://secure-earth-39442.herokuapp.com/https://www.metaweather.com";
 
   const [showSearch, setShowSearch] = useState(false);
   const onSearchPlaces = () => {
